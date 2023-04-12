@@ -42,12 +42,13 @@ const quotes = [
   copyBtn.addEventListener("click", ()=>{
     navigator.clipboard.writeText(quoteText.innerText);
 });
+
 twitterBtn.addEventListener("click", ()=>{
     let tweetUrl = `https://twitter.com/intent/tweet?url=${quoteText.innerText}%20%20%20Quote%20from%20uvindubro.me/love-quotes`;
     window.open(tweetUrl, "_blank");
 });
+
 fbBtn.addEventListener("click", ()=>{
   let fbUrl = `whatsapp://send?text=${quoteText.innerText}%20%20|%20%20Quote%20from%20uvindubro.me/love-quotes`;
   window.open(fbUrl, "_blank");
 });
-
